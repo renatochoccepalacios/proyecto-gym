@@ -27,37 +27,51 @@
     </header> -->
 
     <header class="header">
-        <nav class="navbar navbar-expand-lg fixed-top nav-altura">
-            <a class="navbar-brand ps-5" href="#">GYM</a>
-            <button class="navbar-toggler me-5" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
-                aria-labelledby="navbarOffcanvasLgLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-5 nav-underline">
-                        <li class="nav-item">
-                            <a class="nav-link active px-0" aria-current="page" href="#">inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-0" href="#">nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-0" href="#">planes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-0" href="#">galeria</a>
-                        </li>
-                    </ul>
+        <nav class="navbar fixed-top navbar-expand-lg py-0 back-nav-resposive">
+            
+            <div class="container-fluid contenedor-nav px-4 justify-content-between">
+                <a class="navbar-brand logo-nav" href="#">
+                    <img src="img/avengers-logo.png" alt="">
+                </a>
+                <button class="navbar-toggler hamburguer-color" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-1"></i>
+                </button>
+                <div class="offcanvas offcanvas-end back-nav" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header align-items-start justify-content-between ">
+                        <a class="navbar-brand logo-nav-responsive" href="#">
+                            <img src="img/logo-pia.png" alt="logo nav">
+                        </a>
+                        <button type="button" class="btn-close p-0 fs-1 m-0" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-0 gap-4">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-nav-link color-nav-a" href="pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-nav-link color-nav-a" href="pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-nav-link color-nav-a" href="pages/proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-nav-link color-nav-a" href="pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
         </nav>
+
     </header>
+
 
     <main class="main-inicio">
         <section class="banner">

@@ -5,7 +5,7 @@
 }
 
 .main-inicio .banner {
-  height: calc(100vh - 60px);
+  height: 100vh;
   position: relative;
   z-index: -1;
   overflow: hidden;
@@ -67,18 +67,22 @@
   letter-spacing: 2px;
   color: #fff;
 }
-.header {
-  height: 60px;
-}
-.header .nav-altura {
+.header nav {
   background-color: white;
-  height: 60px;
 }
-.header .nav-altura div div ul {
+.header nav a {
+  height: 90px;
+}
+.header nav a img {
+  height: 100%;
+}
+.header nav div div ul {
   display: flex;
   gap: 2rem;
 }
-.header .nav-altura div div ul li a {
+.header nav div div ul li a {
+  display: flex;
+  align-items: center;
   text-transform: uppercase;
   padding: 4px;
 }

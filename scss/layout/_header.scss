@@ -2,10 +2,11 @@
 
     nav {
         background-color: white;
-        a {
-            height: 90px;
+        .logo-nav {
+            width: 120px;
             img {
                 height: 100%;
+                width: 100%;
             }
         }
         div {

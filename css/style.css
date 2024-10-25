@@ -82,6 +82,14 @@
   height: 100%;
   width: 100%;
 }
+.header nav div div .logo-nav-responsive {
+  width: 190px;
+}
+.header nav div div .logo-nav-responsive img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .header nav div div ul {
   display: flex;
   gap: 2rem;

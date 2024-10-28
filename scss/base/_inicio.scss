@@ -68,98 +68,113 @@
         }
     }
 
-
-    .section-actividades {
-        display: grid;
-        gap: 2rem;
+    .container-actividades {
+        @include flex-direccion-column;
+        gap: 4rem;
         padding: 4rem 2rem;
-        overflow: hidden;
 
-        .actividades-title {
-            display: flex;
-            flex-direction: column;
-            font-size: clamp(1.5rem, 5vw, 2.4rem);
-            @include estilos-texto-h;
-
-        }
-
-
-        h2 {
-            @include estilos-texto-h;
-            font-size: clamp(1.5rem, 5vw, 5rem);
-
-        }
-
-        .actividades-cards {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            .card-item {
-                position: relative;
-                perspective: 1500px;
-
-                &:hover .card-img {
-                    transform: rotateX(180deg);
-                }
-
-                &:hover .card-back {
-                    transform: rotateX(360deg);
-                }
-
-                .card-img {
-                    transform: rotateX(0deg);
-                    transition: transform 1s;
-                    backface-visibility: hidden;
-
-                    img {
-                        @include img-responsiva;
-                    }
-                }
-
-                .card-back {
-                    transform: rotateX(180deg);
-                    backface-visibility: hidden;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: $color-white;
-                    background-color: $color-black;
-                    height: 100%;
-                    width: 100%;
-                    padding: 20px;
-                    transition: transform 1s;
-                    overflow: hidden; // Evita que el texto sobresalga
-
-                    p {
-                        font-size: clamp(10px, 3vw, 2rem);
-                    }
-                }
-
-                &:hover .card-img {
-                    transform: rotateX(180deg);
-                }
-
-                &:hover .card-back {
-                    transform: rotateX(360deg);
-                }
-            }
-
+        .actividades-titulos {
             h3 {
-
+                @include flex-direccion-column;
+                font-size: clamp(1.5rem, 5vw, 2.4rem);
                 @include estilos-texto-h;
-                font-size: clamp(1rem, 5vw, 2rem);
+            }
+
+            h2 {
+                @include estilos-texto-h;
+                font-size: clamp(1.5rem, 5vw, 5rem);
 
             }
         }
+
+
+
+        .section-actividades {
+            display: grid;
+            gap: 2rem;
+            overflow: hidden;
+
+
+
+
+
+            .actividades-cards {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                .card-item {
+                    position: relative;
+                    perspective: 1500px;
+                    height: 700px;
+
+                    &:hover .card-img {
+                        transform: rotateX(180deg);
+                    }
+
+                    &:hover .card-back {
+                        transform: rotateX(360deg);
+                    }
+
+                    .card-img {
+                        transform: rotateX(0deg);
+                        transition: transform 1s;
+                        backface-visibility: hidden;
+                        height: 100%;
+
+                        img {
+                            @include img-responsiva;
+                        }
+                    }
+
+                    .card-back {
+                        transform: rotateX(180deg);
+                        backface-visibility: hidden;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $color-white;
+                        background-color: $color-black;
+                        height: 100%;
+                        width: 100%;
+                        padding: 20px;
+                        transition: transform 1s;
+                        overflow: hidden; // Evita que el texto sobresalga
+
+                        p {
+                            font-size: clamp(10px, 3vw, 1rem);
+                        }
+                    }
+
+                    &:hover .card-img {
+                        transform: rotateX(180deg);
+                    }
+
+                    &:hover .card-back {
+                        transform: rotateX(360deg);
+                    }
+                }
+
+                h3 {
+
+                    @include estilos-texto-h;
+                    font-size: clamp(1rem, 5vw, 2rem);
+
+                }
+            }
+        }
+
+        h4 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: clamp(1rem, 5vw, 2srem);
+
+        }
     }
 
-    h4 {
-        text-transform: uppercase;
-        text-align: center;
-        font-size: clamp(1rem, 5vw, 2srem);
 
-    }
+
 }

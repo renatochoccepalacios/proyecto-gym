@@ -26,3 +26,10 @@
     height: 100%;
     object-fit: cover;
 }
+
+@mixin estilos-texto-h {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}

@@ -1,6 +1,8 @@
 @import "utilidades/variables";
-@import "base/mediaquerys/mq-tablet";
-@import "base/mediaquerys/mq-desktop";
+
 @import "base/reset";
 @import "base/inicio";
 @import "layout/header";
+
+@import "base/mediaquerys/mq-tablet";
+@import "base/mediaquerys/mq-desktop";

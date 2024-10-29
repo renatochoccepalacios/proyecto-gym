@@ -1,7 +1,12 @@
+@import "../../utilidades/mixin";
+
 @media screen and (min-width: 600px) {
     .main-inicio {
+        
         .section-actividades { 
             grid-template-columns: repeat(2, 1fr);
         }
+
+        
     }
 }

@@ -44,14 +44,16 @@
 
 
     .section-mision-historia {
-        @include grid(grid, repeat(2, 1fr), repeat(1, 1fr));
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
-        padding: 4rem 2rem;
+        padding: 7rem 2rem;
         background-color: $color-black;
         color: $white-bajo;
 
         .section-mision-historia-item {
             figure {
+                height: 300px;
                 img {
                     width: 100%;
                     height: 100%;
@@ -71,7 +73,7 @@
     .container-actividades {
         @include flex-direccion-column;
         gap: 4rem;
-        padding: 4rem 2rem;
+        padding: 7rem 2rem;
 
         .actividades-titulos {
             h3 {
@@ -145,7 +147,7 @@
                         overflow: hidden; // Evita que el texto sobresalga
 
                         p {
-                            font-size: clamp(10px, 3vw, 1rem);
+                            font-size: clamp(17px, 3vw, 1rem);
                         }
                     }
 
@@ -175,6 +177,47 @@
         }
     }
 
+    .probar-clase-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 7rem 2rem;
+        gap: 3.4rem;
+        .probar-clase-texto {
+            @include flex-direccion-column;
+            h3 {
+                @include estilos-texto-h-2;
+                font-size: clamp(1.5rem, 5vw, 2.4rem);
+                span {
+                    display: block;
+                }
+            }
+
+            p {
+            }
+
+            a {
+                padding: 20px;
+                color: $color-black;
+                border: 1px solid black;
+                text-transform: uppercase;
+                text-align: center;
+                text-decoration: none;
+                font-size: clamp(1rem, 3vw, 1rem);
+                transition: .5s ease;
+                &:hover {
+                    background-color: $color-black;
+                    color: $color-white;
+                }
+            }
+        }
+
+        .probar-clase-img {
+            margin: 0;
+            img {
+                @include img-responsiva;
+            }
+        }
+    }
 
 
 }

@@ -1,6 +1,10 @@
 @media screen and (min-width: 992px) {
     .main-inicio {
-        .section-actividades { 
+        .section-mision-historia {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .section-actividades {
             grid-template-columns: repeat(4, 1fr);
         }
     }

@@ -7,5 +7,14 @@
         .section-actividades {
             grid-template-columns: repeat(4, 1fr);
         }
+        .probar-clase-section {
+            // grid-template-columns: repeat(2, 1fr);
+            .probar-clase-texto {
+                a {
+                    width: 40%;
+                }
+            }
+    
+        }
     }
 }

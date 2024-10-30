@@ -167,13 +167,15 @@
 }
 .main-inicio .probar-clase-section {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
   padding: 7rem 2rem;
   gap: 3.4rem;
 }
 .main-inicio .probar-clase-section .probar-clase-texto {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
 }
 .main-inicio .probar-clase-section .probar-clase-texto h3 {
   text-transform: uppercase;
@@ -185,12 +187,13 @@
 }
 .main-inicio .probar-clase-section .probar-clase-texto a {
   padding: 20px;
+  width: 100%;
   color: #000;
   border: 1px solid black;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  font-size: clamp(1rem, 3vw, 1rem);
+  font-size: clamp(12px, 3vw, 1rem);
   transition: 0.5s ease;
 }
 .main-inicio .probar-clase-section .probar-clase-texto a:hover {
@@ -198,6 +201,7 @@
   color: #fff;
 }
 .main-inicio .probar-clase-section .probar-clase-img {
+  height: 450px;
   margin: 0;
 }
 .main-inicio .probar-clase-section .probar-clase-img img {
@@ -246,6 +250,9 @@
   }
   .main-inicio .section-actividades {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .main-inicio .probar-clase-section .probar-clase-texto a {
+    width: 40%;
   }
 }
 

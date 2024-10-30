@@ -179,11 +179,13 @@
 
     .probar-clase-section {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
         padding: 7rem 2rem;
         gap: 3.4rem;
         .probar-clase-texto {
             @include flex-direccion-column;
+            justify-content: center;
+            gap: 1.4rem;
             h3 {
                 @include estilos-texto-h-2;
                 font-size: clamp(1.5rem, 5vw, 2.4rem);
@@ -197,12 +199,13 @@
 
             a {
                 padding: 20px;
+                width: 100%;
                 color: $color-black;
                 border: 1px solid black;
                 text-transform: uppercase;
                 text-align: center;
                 text-decoration: none;
-                font-size: clamp(1rem, 3vw, 1rem);
+                font-size: clamp(12px, 3vw, 1rem);
                 transition: .5s ease;
                 &:hover {
                     background-color: $color-black;
@@ -212,6 +215,7 @@
         }
 
         .probar-clase-img {
+            height: 450px;
             margin: 0;
             img {
                 @include img-responsiva;

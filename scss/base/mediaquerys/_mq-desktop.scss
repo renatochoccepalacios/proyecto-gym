@@ -17,4 +17,37 @@
     
         }
     }
+
+    .footer-principal {
+        grid-template-columns: repeat(2, 1fr);
+
+        .footer-logo-contenedor {
+            @include flex-direccion(flex, row);
+        
+            p {
+                text-align: left;
+                span {
+                    display: block;
+
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .footer-redes-contenedor {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+
+        .footer-derechos-autor {
+            grid-column: span 2;
+           
+    
+        }
+    }
+
+    
 }

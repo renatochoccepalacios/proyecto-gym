@@ -6,6 +6,15 @@
         .section-actividades { 
             grid-template-columns: repeat(2, 1fr);
         }
+        
+    }
+
+    .footer-principal {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "logo"
+        "redes"
+        "parrafo parrafo"; // nueva fila para el párrafo
 
         
     }

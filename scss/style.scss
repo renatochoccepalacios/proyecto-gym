@@ -1,8 +1,8 @@
 @import "utilidades/variables";
+@import "base/reset";          // Reseteo de estilos primero
+@import "layout/header";       // Estructura de header
+@import "layout/footer";       // Estructura de footer
+@import "base/inicio";         // Estilos de secciones principales
 
-@import "base/reset";
-@import "base/inicio";
-@import "layout/header";
-
-@import "base/mediaquerys/mq-tablet";
-@import "base/mediaquerys/mq-desktop";
+@import "base/mediaquerys/mq-tablet";   // Media queries para tablet
+@import "base/mediaquerys/mq-desktop";  // Media queries para desktop

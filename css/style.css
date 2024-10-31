@@ -4,6 +4,78 @@
   box-sizing: border-box;
 }
 
+.header nav {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: white;
+}
+.header nav .logo-nav {
+  width: 120px;
+}
+.header nav .logo-nav img {
+  height: 100%;
+  width: 100%;
+}
+.header nav div div .logo-nav-responsive {
+  width: 190px;
+}
+.header nav div div .logo-nav-responsive img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header nav div div ul {
+  display: flex;
+  gap: 2rem;
+}
+.header nav div div ul li a {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 4px;
+}
+
+.footer-principal {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 4rem 2rem;
+  gap: 1.5rem;
+}
+.footer-principal .footer-logo-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-principal .footer-logo-contenedor .footer-logo {
+  margin: 0;
+  max-width: 200px;
+}
+.footer-principal .footer-logo-contenedor .footer-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer-principal .footer-logo-contenedor p {
+  font-weight: 600;
+  font-size: clamp(12px, 3vw, 1rem);
+  margin: 0;
+}
+.footer-principal .footer-redes-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.footer-principal .footer-redes-contenedor .footer-redes-item {
+  color: #000;
+  font-size: 1.5rem;
+}
+.footer-principal .footer-derechos-autor {
+  margin: 0;
+  text-align: center;
+  font-size: clamp(12px, 3vw, 1rem);
+}
+
 .main-inicio .banner {
   height: 100vh;
   overflow: hidden;
@@ -210,38 +282,13 @@
   object-fit: cover;
 }
 
-.header nav {
-  background-color: white;
-}
-.header nav .logo-nav {
-  width: 120px;
-}
-.header nav .logo-nav img {
-  height: 100%;
-  width: 100%;
-}
-.header nav div div .logo-nav-responsive {
-  width: 190px;
-}
-.header nav div div .logo-nav-responsive img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.header nav div div ul {
-  display: flex;
-  gap: 2rem;
-}
-.header nav div div ul li a {
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  padding: 4px;
-}
-
 @media screen and (min-width: 600px) {
   .main-inicio .section-actividades {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-principal {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "logo" "redes" "parrafo parrafo";
   }
 }
 @media screen and (min-width: 992px) {
@@ -253,6 +300,30 @@
   }
   .main-inicio .probar-clase-section .probar-clase-texto a {
     width: 40%;
+  }
+  .footer-principal {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-principal .footer-logo-contenedor {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-principal .footer-logo-contenedor p {
+    text-align: left;
+  }
+  .footer-principal .footer-logo-contenedor p span {
+    display: block;
+  }
+  .footer-principal .footer-logo-contenedor p span span {
+    display: block;
+  }
+  .footer-principal .footer-redes-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .footer-principal .footer-derechos-autor {
+    grid-column: span 2;
   }
 }
 

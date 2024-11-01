@@ -18,9 +18,9 @@
             height: 100vh;
             width: 100%;
             object-fit: cover;
-            background-image: url(../img/banner-1.jpg);
+            // background-image: url(../img/banner-1.jpg);
             background-position: center;
-            // animation: banner 10s infinite linear alternate;
+            animation: banner 10s infinite linear alternate;
             background-size: cover;
             position: absolute;
         }

@@ -43,3 +43,15 @@
     display: flex;
     flex-direction: column;
 }
+
+@mixin formulario-estilos {
+    border: 1px solid #aaaaaa;
+    padding: 0.5rem 1rem;
+}
+
+@mixin centrar-contenido-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

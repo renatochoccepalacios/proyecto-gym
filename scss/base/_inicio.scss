@@ -4,6 +4,7 @@
 .main-inicio {
     position: relative;
     overflow: hidden;
+
     .banner {
         position: relative;
         overflow: hidden;
@@ -60,6 +61,7 @@
         .section-mision-historia-item {
             figure {
                 height: 300px;
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -188,19 +190,19 @@
         grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
         padding: 7rem 2rem;
         gap: 3.4rem;
+
         .probar-clase-texto {
             @include flex-direccion-column;
             justify-content: center;
             gap: 1.4rem;
+
             h3 {
                 @include estilos-texto-h-2;
                 font-size: clamp(1.5rem, 5vw, 2.4rem);
+
                 span {
                     display: block;
                 }
-            }
-
-            p {
             }
 
             a {
@@ -213,6 +215,7 @@
                 text-decoration: none;
                 font-size: clamp(12px, 3vw, 1rem);
                 transition: .5s ease;
+
                 &:hover {
                     background-color: $color-black;
                     color: $color-white;
@@ -223,11 +226,50 @@
         .probar-clase-img {
             height: 450px;
             margin: 0;
+
             img {
                 @include img-responsiva;
             }
         }
     }
 
+    .contacto-section {
+        @include centrar-contenido-flex;
+        gap: 2rem;
+        padding: 4rem 2rem;
+        min-height: 100vh;
 
+        .contacto-title {
+            @include estilos-texto-h;
+            letter-spacing: 0;
+            text-transform: none;
+        }
+        .formulario-contenedor {
+            display: grid;
+            grid-template-columns: repeat(1, 100%);
+            gap: 1.4rem;
+            width: 100%;
+            max-width: 700px;
+            // margin: 0 auto;
+            justify-content: center;
+
+            .formulario-input-contenedor {
+                display: grid;
+                gap: 1.4rem;
+                grid-template-columns: 1fr;
+
+                .formulario-input {
+                    @include formulario-estilos;
+                }
+
+            }
+
+
+            .formulario-textarea {
+                @include formulario-estilos;
+                height: 200px;
+            }
+
+        }
+    }
 }

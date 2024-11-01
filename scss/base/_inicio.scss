@@ -1,17 +1,23 @@
 @import "../utilidades/mixin";
+@import "../utilidades/animaciones";
 
 .main-inicio {
+    position: relative;
+    overflow: hidden;
     .banner {
-        height: 100vh;
+        position: relative;
         overflow: hidden;
+        height: 100vh;
 
 
-        .back-negro {
-            height: 100vh;
+        &::after {
+            content: "";
             position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            z-index: 5;
-            background: rgba(0, 0, 0, 0.6392156863);
+            height: 100%;
+            background-color: rgba(0, 0, 0, .75);
         }
 
         .img-inicio {

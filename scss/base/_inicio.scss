@@ -236,7 +236,7 @@
     .contacto-section {
         @include centrar-contenido-flex;
         gap: 2rem;
-        padding: 4rem 2rem;
+        padding: 8rem 2rem;
         min-height: 100vh;
 
         .contacto-title {
@@ -244,30 +244,58 @@
             letter-spacing: 0;
             text-transform: none;
         }
+
         .formulario-contenedor {
             display: grid;
             grid-template-columns: repeat(1, 100%);
+            
             gap: 1.4rem;
             width: 100%;
             max-width: 700px;
             // margin: 0 auto;
             justify-content: center;
-
+            
             .formulario-input-contenedor {
                 display: grid;
                 gap: 1.4rem;
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(auto-fill, minmax(min(150px, 100%), 1fr));
+
 
                 .formulario-input {
                     @include formulario-estilos;
                 }
 
             }
+            .formulario-input-contenedor input:nth-child(1) {
+                grid-column:  1 / -1;
+            }
+            .formulario-input-contenedor input:nth-child(2) {
+                grid-column:  1 / -1;
+                background-color: red;
+            }
+
+            .formulario-input-contenedor input:nth-child(3) {
+                grid-column: 1 / -1;
+            }
 
 
             .formulario-textarea {
                 @include formulario-estilos;
                 height: 200px;
+            }
+
+            .formulario-buttons {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+                gap: 1rem;
+                .formulario-button {
+                    padding: 0.8rem 1rem;
+                    text-transform: uppercase;
+                    background-color: $color-black;
+                    border-radius: 1px;
+                    border: none;
+                    color: $color-white;
+                }
             }
 
         }

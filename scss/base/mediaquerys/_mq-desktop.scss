@@ -7,14 +7,40 @@
         .section-actividades {
             grid-template-columns: repeat(4, 1fr);
         }
+
         .probar-clase-section {
+
             // grid-template-columns: repeat(2, 1fr);
             .probar-clase-texto {
                 a {
                     width: 40%;
                 }
             }
-    
+
+        }
+
+        .contacto-section {
+            .formulario-contenedor {
+                /* grid-template-areas:
+                    "input-nombre" "input-apellido"
+                    "input-email input-email"
+                ;
+
+                .formulario-input-contenedor input:nth-child(1) {
+                    grid-area: ;
+                } */
+                .formulario-input-contenedor input:nth-child(1) {
+                    grid-column: span 2 ;
+                }
+                .formulario-input-contenedor input:nth-child(2) {
+                    grid-column: span 2;
+                }
+
+                .formulario-input-contenedor input:nth-child(3) {
+                    grid-column: 1 / -1;
+                }
+                
+            }
         }
     }
 
@@ -23,9 +49,10 @@
 
         .footer-logo-contenedor {
             @include flex-direccion(flex, row);
-        
+
             p {
                 text-align: left;
+
                 span {
                     display: block;
 
@@ -44,10 +71,10 @@
 
         .footer-derechos-autor {
             grid-column: span 2;
-           
-    
+
+
         }
     }
 
-    
+
 }

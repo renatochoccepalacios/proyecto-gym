@@ -345,7 +345,6 @@
 }
 .main-inicio .contacto-section .formulario-contenedor .formulario-input-contenedor input:nth-child(2) {
   grid-column: 1/-1;
-  background-color: red;
 }
 .main-inicio .contacto-section .formulario-contenedor .formulario-input-contenedor input:nth-child(3) {
   grid-column: 1/-1;

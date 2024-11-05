@@ -233,6 +233,41 @@
         }
     }
 
+    .planes-section {
+        padding: 9rem 2rem;
+        text-align: center;
+        display: grid;
+        gap: 5rem;
+
+        .planes-contenedor {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
+            gap: 2rem;
+
+            .plan-item {
+                text-align: center;
+                border-radius: 20px;
+
+                .plan-item-title {
+
+                    text-align: center;
+                    background-color: $color-celeste;
+                    padding: 2rem 4rem;
+                }
+
+                .plan-list {
+                    @include flex-direccion-column;
+                }
+
+            }
+
+            article:nth-child(2) {
+                position: relative;
+                bottom: 40px;
+            }
+        }
+    }
+
     .contacto-section {
         @include centrar-contenido-flex;
         gap: 2rem;
@@ -248,13 +283,13 @@
         .formulario-contenedor {
             display: grid;
             grid-template-columns: repeat(1, 100%);
-            
+
             gap: 1.4rem;
             width: 100%;
             max-width: 700px;
             // margin: 0 auto;
             justify-content: center;
-            
+
             .formulario-input-contenedor {
                 display: grid;
                 gap: 1.4rem;
@@ -266,11 +301,13 @@
                 }
 
             }
+
             .formulario-input-contenedor input:nth-child(1) {
-                grid-column:  1 / -1;
+                grid-column: 1 / -1;
             }
+
             .formulario-input-contenedor input:nth-child(2) {
-                grid-column:  1 / -1;
+                grid-column: 1 / -1;
             }
 
             .formulario-input-contenedor input:nth-child(3) {
@@ -287,6 +324,7 @@
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
                 gap: 1rem;
+
                 .formulario-button {
                     padding: 0.8rem 1rem;
                     text-transform: uppercase;

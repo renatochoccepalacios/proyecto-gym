@@ -239,6 +239,12 @@
         display: grid;
         gap: 5rem;
 
+        h2 {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: clamp(2rem, 5vw, 4.5rem);
+        }
+
         .planes-contenedor {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
@@ -246,10 +252,9 @@
 
             .plan-item {
                 text-align: center;
-                border-radius: 20px;
-
                 .plan-item-title {
-
+                    color: $color-white;
+                    text-transform: uppercase;
                     text-align: center;
                     background-color: $color-celeste;
                     padding: 2rem 4rem;
@@ -257,14 +262,21 @@
 
                 .plan-list {
                     @include flex-direccion-column;
+                    margin-top: 4rem;
+                    padding: 2rem;
+                    gap: 2rem;
+
+                        li {
+                            i {
+                                margin-right: 10px;
+                                font-size: 20px;
+                            }
+                        }
                 }
 
             }
 
-            article:nth-child(2) {
-                position: relative;
-                bottom: 40px;
-            }
+            
         }
     }
 

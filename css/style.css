@@ -356,6 +356,11 @@ table {
   display: grid;
   gap: 5rem;
 }
+.main-inicio .planes-section h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+}
 .main-inicio .planes-section .planes-contenedor {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
@@ -363,9 +368,10 @@ table {
 }
 .main-inicio .planes-section .planes-contenedor .plan-item {
   text-align: center;
-  border-radius: 20px;
 }
 .main-inicio .planes-section .planes-contenedor .plan-item .plan-item-title {
+  color: #fff;
+  text-transform: uppercase;
   text-align: center;
   background-color: #a4c2f4;
   padding: 2rem 4rem;
@@ -373,10 +379,13 @@ table {
 .main-inicio .planes-section .planes-contenedor .plan-item .plan-list {
   display: flex;
   flex-direction: column;
+  margin-top: 4rem;
+  padding: 2rem;
+  gap: 2rem;
 }
-.main-inicio .planes-section .planes-contenedor article:nth-child(2) {
-  position: relative;
-  bottom: 40px;
+.main-inicio .planes-section .planes-contenedor .plan-item .plan-list li i {
+  margin-right: 10px;
+  font-size: 20px;
 }
 .main-inicio .contacto-section {
   display: flex;
@@ -516,6 +525,12 @@ table {
   }
   .footer-principal .footer-derechos-autor {
     grid-column: span 2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-inicio .planes-section .planes-contenedor article:nth-child(2) {
+    position: relative;
+    bottom: 40px;
   }
 }
 

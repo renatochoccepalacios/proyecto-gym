@@ -19,8 +19,11 @@
 
         }
 
+        
+
         .contacto-section {
             .formulario-contenedor {
+
                 /* grid-template-areas:
                     "input-nombre" "input-apellido"
                     "input-email input-email"
@@ -30,8 +33,9 @@
                     grid-area: ;
                 } */
                 .formulario-input-contenedor input:nth-child(1) {
-                    grid-column: span 2 ;
+                    grid-column: span 2;
                 }
+
                 .formulario-input-contenedor input:nth-child(2) {
                     grid-column: span 2;
                 }
@@ -39,9 +43,10 @@
                 .formulario-input-contenedor input:nth-child(3) {
                     grid-column: 1 / -1;
                 }
-                
+
             }
         }
+
     }
 
     .footer-principal {
@@ -77,4 +82,18 @@
     }
 
 
+}
+
+
+@media screen and (min-width: 1024px){
+    .main-inicio {
+        .planes-section {
+            .planes-contenedor {
+                article:nth-child(2) {
+                    position: relative;
+                    bottom: 40px;
+                }
+            }
+        }
+    }
 }

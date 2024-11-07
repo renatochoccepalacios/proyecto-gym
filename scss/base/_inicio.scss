@@ -25,7 +25,7 @@
             height: 100vh;
             width: 100%;
             object-fit: cover;
-            // background-image: url(../img/banner-1.jpg);
+            // background-image: url(../../img/banner1-.jpg);
             background-position: center;
             animation: banner 10s infinite linear alternate;
             background-size: cover;
@@ -55,8 +55,6 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
         padding: 7rem 2rem;
-        background-color: $color-black;
-        color: $white-bajo;
 
         .section-mision-historia-item {
             figure {
@@ -72,7 +70,6 @@
             h2 {
                 text-transform: uppercase;
                 letter-spacing: 2px;
-                color: $color-white;
 
             }
         }
@@ -82,17 +79,22 @@
         @include flex-direccion-column;
         gap: 4rem;
         padding: 7rem 2rem;
+        background-color: $color-black;
+        color: $color-white;
 
         .actividades-titulos {
+
             h3 {
                 @include flex-direccion-column;
                 font-size: clamp(1.5rem, 5vw, 2.4rem);
                 @include estilos-texto-h;
+
             }
 
             h2 {
                 @include estilos-texto-h;
                 font-size: clamp(1.5rem, 5vw, 5rem);
+
 
             }
         }
@@ -144,8 +146,8 @@
                         top: 0;
                         left: 0;
                         display: flex;
+                        text-align: center;
                         align-items: center;
-                        justify-content: center;
                         color: $color-white;
                         background-color: $color-black;
                         height: 100%;
@@ -177,11 +179,22 @@
             }
         }
 
-        h4 {
+        .actividades-link {
+            @include centrar-contenido-flex;
+            flex-direction: row;
+            gap: 0.4rem;
             text-transform: uppercase;
             text-align: center;
-            font-size: clamp(1rem, 5vw, 2srem);
+            font-size: clamp(1rem, 5vw, 1.8rem);
+            transition: 0.3s ease;
 
+            &:hover {
+                color: $color-amarillo;
+            }
+
+            i {
+                font-size: 3rem;
+            }
         }
     }
 
@@ -205,7 +218,7 @@
                 }
             }
 
-            a {
+            .probar-clase-link {
                 padding: 20px;
                 width: 100%;
                 color: $color-black;

@@ -125,16 +125,16 @@ table {
 
 @keyframes banner {
   0%, 20% {
-    background-image: url(../../img/banner1.jpg);
+    background-image: url(../img/banner1.jpg);
   }
   25%, 45% {
-    background-image: url(../../img/banner2.jpg);
+    background-image: url(../img/banner2.jpg);
   }
   50%, 70% {
-    background-image: url(../../img/banner3.jpg);
+    background-image: url(../img/banner3.jpg);
   }
   75%, 100% {
-    background-image: url(../../img/banner4.jpg);
+    background-image: url(../img/banner4.jpg);
     transform: scale(1.2);
   }
 }
@@ -210,7 +210,7 @@ table {
 .main-inicio .section-mision-historia .section-mision-historia-item h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .main-inicio .container-actividades {
   display: flex;

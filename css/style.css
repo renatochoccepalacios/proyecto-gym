@@ -193,6 +193,18 @@ table {
   font-size: clamp(0.5rem, 5vw, 1.3rem);
   font-weight: 300;
 }
+.main-inicio .banner .banner-redes {
+  position: absolute;
+  z-index: 6;
+  bottom: 2rem;
+  right: 5rem;
+  display: grid;
+  gap: 2rem;
+}
+.main-inicio .banner .banner-redes .banner-redes-item {
+  font-size: 1.5rem;
+  color: #fff;
+}
 .main-inicio .section-mision-historia {
   display: grid;
   grid-template-columns: repeat(1, 1fr);

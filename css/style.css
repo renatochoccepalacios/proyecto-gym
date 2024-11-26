@@ -145,7 +145,7 @@ table {
 .main-inicio .banner {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  height: 100dvh;
 }
 .main-inicio .banner::after {
   content: "";
@@ -197,7 +197,7 @@ table {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
-  padding: 7rem 2rem;
+  padding: 8rem 2rem;
 }
 .main-inicio .section-mision-historia .section-mision-historia-item figure {
   height: 300px;
@@ -210,12 +210,13 @@ table {
 .main-inicio .section-mision-historia .section-mision-historia-item h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: 500;
 }
 .main-inicio .container-actividades {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: 7rem 2rem;
+  padding: 8rem 2rem;
   background-color: #000;
   color: #fff;
 }
@@ -321,7 +322,7 @@ table {
 .main-inicio .probar-clase-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
-  padding: 7rem 2rem;
+  padding: 8rem 2rem;
   gap: 3.4rem;
 }
 .main-inicio .probar-clase-section .probar-clase-texto {
@@ -363,7 +364,7 @@ table {
   object-fit: cover;
 }
 .main-inicio .planes-section {
-  padding: 9rem 2rem;
+  padding: 8rem 2rem;
   text-align: center;
   display: grid;
   gap: 5rem;
@@ -461,21 +462,6 @@ table {
   color: #fff;
 }
 
-@keyframes banner {
-  0%, 20% {
-    background-image: url(../../img/banner1.jpg);
-  }
-  25%, 45% {
-    background-image: url(../../img/banner2.jpg);
-  }
-  50%, 70% {
-    background-image: url(../../img/banner3.jpg);
-  }
-  75%, 100% {
-    background-image: url(../../img/banner4.jpg);
-    transform: scale(1.2);
-  }
-}
 @media screen and (min-width: 600px) {
   .main-inicio .section-actividades {
     grid-template-columns: repeat(2, 1fr);

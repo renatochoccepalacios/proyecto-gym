@@ -1,8 +1,9 @@
-@import "utilidades/variables";
-@import "base/reset";          // Reseteo de estilos primero
-@import "layout/header";       // Estructura de header
-@import "layout/footer";       // Estructura de footer
-@import "base/inicio";         // Estilos de secciones principales
-@import "utilidades/animaciones";
-@import "base/mediaquerys/mq-tablet";   // Media queries para tablet
-@import "base/mediaquerys/mq-desktop";  // Media queries para desktop
+@use "utilidades/variables";
+@use "utilidades/mixin";
+@use "base/reset";          // Reseteo de estilos primero
+@use "layout/header";       // Estructura de header
+@use "layout/footer";       // Estructura de footer
+@use "base/inicio";         // Estilos de secciones principales
+@use "utilidades/animaciones";
+@use "base/mediaquerys/mq-tablet";   // Media queries para tablet
+@use "base/mediaquerys/mq-desktop";  // Media queries para desktop

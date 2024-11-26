@@ -1,4 +1,4 @@
-@import "../utilidades/mixin";
+@use "../utilidades/mixin";
 
 .header {
 
@@ -18,7 +18,7 @@
                 .logo-nav-responsive {
                     width: 190px;
                     img {
-                        @include img-responsiva;
+                        @include mixin.img-responsiva;
                     }
                 }
             }

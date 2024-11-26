@@ -1,5 +1,6 @@
-@import "../utilidades/mixin";
-@import "../utilidades/animaciones";
+@use "../utilidades/mixin";
+@use "../utilidades/animaciones";
+@use "../utilidades/variables";
 
 .main-inicio {
     position: relative;
@@ -8,7 +9,7 @@
     .banner {
         position: relative;
         overflow: hidden;
-        height: 100vh;
+        height: 100dvh;
 
 
         &::after {
@@ -35,14 +36,14 @@
 
 
         .h1-inicio {
-            @include estilos-texto-banner;
+            @include mixin.estilos-texto-banner;
             top: 45%;
             font-size: clamp(1.5rem, 5vw, 5rem);
             font-weight: 300;
         }
 
         h2 {
-            @include estilos-texto-banner;
+            @include mixin.estilos-texto-banner;
             bottom: 20px;
             font-size: clamp(0.5rem, 5vw, 1.3rem);
             font-weight: 300;
@@ -54,7 +55,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
-        padding: 7rem 2rem;
+        padding: 8rem 2rem;
 
         .section-mision-historia-item {
             figure {
@@ -70,29 +71,30 @@
             h2 {
                 text-transform: uppercase;
                 letter-spacing: 2px;
+                font-weight: 500;
 
             }
         }
     }
 
     .container-actividades {
-        @include flex-direccion-column;
+        @include mixin.flex-direccion-column;
         gap: 4rem;
-        padding: 7rem 2rem;
-        background-color: $color-black;
-        color: $color-white;
+        padding: 8rem 2rem;
+        background-color: variables.$color-black;
+        color: variables.$color-white;
 
         .actividades-titulos {
 
             h3 {
-                @include flex-direccion-column;
+                @include mixin.flex-direccion-column;
                 font-size: clamp(1.5rem, 5vw, 2.4rem);
-                @include estilos-texto-h;
+                @include mixin.estilos-texto-h;
 
             }
 
             h2 {
-                @include estilos-texto-h;
+                @include mixin.estilos-texto-h;
                 font-size: clamp(1.5rem, 5vw, 5rem);
 
 
@@ -135,7 +137,7 @@
                         height: 100%;
 
                         img {
-                            @include img-responsiva;
+                            @include mixin.img-responsiva;
                         }
                     }
 
@@ -148,8 +150,8 @@
                         display: flex;
                         text-align: center;
                         align-items: center;
-                        color: $color-white;
-                        background-color: $color-black;
+                        color: variables.$color-white;
+                        background-color: variables.$color-black;
                         height: 100%;
                         width: 100%;
                         padding: 20px;
@@ -172,7 +174,7 @@
 
                 h3 {
 
-                    @include estilos-texto-h;
+                    @include mixin.estilos-texto-h;
                     font-size: clamp(1rem, 5vw, 2rem);
 
                 }
@@ -180,7 +182,7 @@
         }
 
         .actividades-link {
-            @include centrar-contenido-flex;
+            @include mixin.centrar-contenido-flex;
             flex-direction: row;
             gap: 0.4rem;
             text-transform: uppercase;
@@ -189,7 +191,7 @@
             transition: 0.3s ease;
 
             &:hover {
-                color: $color-amarillo;
+                color: variables.$color-amarillo;
             }
 
             i {
@@ -201,16 +203,16 @@
     .probar-clase-section {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
-        padding: 7rem 2rem;
+        padding: 8rem 2rem;
         gap: 3.4rem;
 
         .probar-clase-texto {
-            @include flex-direccion-column;
+            @include mixin.flex-direccion-column;
             justify-content: center;
             gap: 1.4rem;
 
             h3 {
-                @include estilos-texto-h-2;
+                @include mixin.estilos-texto-h-2;
                 font-size: clamp(1.5rem, 5vw, 2.4rem);
 
                 span {
@@ -221,7 +223,7 @@
             .probar-clase-link {
                 padding: 20px;
                 width: 100%;
-                color: $color-black;
+                color: variables.$color-black;
                 border: 1px solid black;
                 text-transform: uppercase;
                 text-align: center;
@@ -230,8 +232,8 @@
                 transition: .5s ease;
 
                 &:hover {
-                    background-color: $color-black;
-                    color: $color-white;
+                    background-color: variables.$color-black;
+                    color: variables.$color-white;
                 }
             }
         }
@@ -241,13 +243,13 @@
             margin: 0;
 
             img {
-                @include img-responsiva;
+                @include mixin.img-responsiva;
             }
         }
     }
 
     .planes-section {
-        padding: 9rem 2rem;
+        padding: 8rem 2rem;
         text-align: center;
         display: grid;
         gap: 5rem;
@@ -266,15 +268,15 @@
             .plan-item {
                 text-align: center;
                 .plan-item-title {
-                    color: $color-white;
+                    color: variables.$color-white;
                     text-transform: uppercase;
                     text-align: center;
-                    background-color: $color-celeste;
+                    background-color: variables.$color-celeste;
                     padding: 2rem 4rem;
                 }
 
                 .plan-list {
-                    @include flex-direccion-column;
+                    @include mixin.flex-direccion-column;
                     margin-top: 4rem;
                     padding: 2rem;
                     gap: 2rem;
@@ -294,13 +296,13 @@
     }
 
     .contacto-section {
-        @include centrar-contenido-flex;
+        @include mixin.centrar-contenido-flex;
         gap: 2rem;
         padding: 8rem 2rem;
         min-height: 100vh;
 
         .contacto-title {
-            @include estilos-texto-h;
+            @include mixin.estilos-texto-h;
             letter-spacing: 0;
             text-transform: none;
         }
@@ -322,7 +324,7 @@
 
 
                 .formulario-input {
-                    @include formulario-estilos;
+                    @include mixin.formulario-estilos;
                 }
 
             }
@@ -341,7 +343,7 @@
 
 
             .formulario-textarea {
-                @include formulario-estilos;
+                @include mixin.formulario-estilos;
                 height: 200px;
             }
 
@@ -353,10 +355,10 @@
                 .formulario-button {
                     padding: 0.8rem 1rem;
                     text-transform: uppercase;
-                    background-color: $color-black;
+                    background-color: variables.$color-black;
                     border-radius: 1px;
                     border: none;
-                    color: $color-white;
+                    color: variables.$color-white;
                 }
             }
 

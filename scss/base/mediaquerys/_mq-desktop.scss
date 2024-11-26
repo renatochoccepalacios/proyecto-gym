@@ -1,3 +1,4 @@
+@use "../../utilidades/mixin";
 @media screen and (min-width: 992px) {
     .main-inicio {
         .section-mision-historia {
@@ -53,7 +54,7 @@
         grid-template-columns: repeat(2, 1fr);
 
         .footer-logo-contenedor {
-            @include flex-direccion(flex, row);
+            @include mixin.flex-direccion(flex, row);
 
             p {
                 text-align: left;
